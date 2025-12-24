@@ -10,9 +10,9 @@ WiFiServer server(1234);
 WiFiClient client;
 
 void initWiFiHotspot() {
-    WiFi.softAP("MyBrakeMachine", "12345678");
+    WiFi.softAP("SurgeryBox", "12345678");
     server.begin();
-    Serial.println("[WiFi] Hotspot started: SSID=MyBrakeMachine, Password=12345678");
+    Serial.println("[WiFi] Hotspot started: SSID=SurgeryBox, Password=12345678");
 }
 
 String readCommandFromClient() {

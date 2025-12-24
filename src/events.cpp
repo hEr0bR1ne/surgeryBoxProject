@@ -3,7 +3,7 @@
 #include "config.h"
 #include "encoder.h"
 #include "servo_brake.h"
-#include "wifi_server.h"
+#include "wifi_udp_server.h"
 
 float distanceArrays[10][4];
 float currentArray[4];
@@ -32,23 +32,23 @@ void processEncoderEvents() {
     if(!sequenceRunning) return;
     float dist = readDistance();
 
-    if(dist >= currentArray[0]) sendSignal("Pain");
-    if(dist >= currentArray[1]) sendSignal("Pain2");
+    if(dist >= currentArray[0]) sendUDPMessageToLast("Pain");
+    if(dist >= currentArray[1]) sendUDPMessageToLast("Pain2");
     if(dist >= currentArray[2]) {
-        sendSignal("HighDamp");
+        sendUDPMessageToLast("HighDamp");
         servoBrakeLock();
         waitForCmd("OK");
         servoBrakeRelease();
     }
     if(dist >= currentArray[3]) {
-        sendSignal("LowDamp");
+        sendUDPMessageToLast("LowDamp");
         servoBrakeWeak();
         String cmd = waitForCmdAny({"OK1","Continue"});
         if(cmd == "OK1") {
             servoBrakeRelease();
         } else if(cmd == "Continue") {
             waitShortPull();
-            sendSignal("Keep");
+            sendUDPMessageToLast("Keep");
             waitForCmd("OK2");
             servoBrakeRelease();
         }
