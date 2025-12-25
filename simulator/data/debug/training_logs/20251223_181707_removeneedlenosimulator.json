@@ -1,0 +1,22 @@
+{
+  "username": "debug",
+  "completed_at": "2025-12-23T18:17:07.050351",
+  "training_data": {
+    "training_mode": "remove_needle_no_simulator",
+    "elapsed_time": 85.65720343589783,
+    "events_triggered": {
+      "Q3": 5.510855436325073,
+      "Q4": 27.162375450134277,
+      "Q5": 39.98739218711853
+    },
+    "max_pull_distance": 20.97620129585266,
+    "pull_config": {
+      "scream_distance_1": 4.6,
+      "scream_distance_2": 5.3,
+      "high_damping_distance": 11.0,
+      "low_damping_distance": 18.0,
+      "damping_after_reposition": 0
+    },
+    "completed_at": "2025-12-23T18:17:07.050351"
+  }
+}

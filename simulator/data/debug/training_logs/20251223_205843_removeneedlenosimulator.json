@@ -1,0 +1,44 @@
+{
+  "username": "debug",
+  "completed_at": "2025-12-23T20:58:43.892215",
+  "training_data": {
+    "training_type": "remove_needle_no_simulator",
+    "training_mode": "remove_needle_no_simulator",
+    "elapsed_time": 90.16019797325134,
+    "accuracy": 100.0,
+    "events_triggered": {
+      "Q3": 25.479223489761353,
+      "Q5": 46.29901695251465,
+      "Q4": 71.14835739135742
+    },
+    "max_pull_distance": 20.0,
+    "pull_config": {
+      "events_queue": [
+        [
+          2.5,
+          "Q3"
+        ],
+        [
+          13.8,
+          "Q5"
+        ],
+        [
+          14.5,
+          "Q3"
+        ],
+        [
+          17.2,
+          "Q4"
+        ]
+      ],
+      "event_map": {
+        "scream_distance_1": 2.5,
+        "scream_distance_2": null,
+        "high_damping_distance": null,
+        "low_damping_distance": null
+      },
+      "damping_after_reposition": 1
+    },
+    "completed_at": "2025-12-23T20:58:43.891201"
+  }
+}

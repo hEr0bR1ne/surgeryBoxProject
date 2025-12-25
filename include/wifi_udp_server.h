@@ -3,13 +3,18 @@
 
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
+#include <ESP8266WebServer.h>
 #include <WiFiUdp.h>
 #include <initializer_list>
 
 // 初始化热点和UDP监听
 void initWiFiHotspotUDP(const char* ssid, const char* password, uint16_t listenPort);
 
-// 循环调用，处理收到的UDP数据
+// HTTP Echo 服务器（用于上位机测试）
+void initHttpEchoServer();
+void handleHttpServer();
+
+// 循环调用，处理收到的UDP数据（Start/Stop/Winding）
 void handleUDPMessages();
 
 // 主动向某IP/端口发送消息

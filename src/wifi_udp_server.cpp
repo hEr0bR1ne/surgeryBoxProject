@@ -9,6 +9,7 @@ uint16_t localPort;
 IPAddress lastRemoteIp;
 uint16_t lastRemotePort;
 char packetBuffer[255]; // 接收缓冲
+ESP8266WebServer httpServer(80);
 
 // 读取一次UDP消息，若有则返回true并更新最近的客户端信息
 static bool readIncomingUDP(String &msg) {
@@ -35,6 +36,23 @@ void initWiFiHotspotUDP(const char* ssid, const char* password, uint16_t listenP
     Serial.println(WiFi.softAPIP());
 }
 
+void initHttpEchoServer() {
+    httpServer.on("/echo", HTTP_ANY, []() {
+        String body = httpServer.arg("plain");
+        Serial.printf("[HTTP] /echo received (%d bytes): %s\n", body.length(), body.c_str());
+        httpServer.send(200, "text/plain", body);
+    });
+    httpServer.onNotFound([]() {
+        httpServer.send(404, "text/plain", "Not Found");
+    });
+    httpServer.begin();
+    Serial.println("[HTTP] Echo server started on port 80");
+}
+
+void handleHttpServer() {
+    httpServer.handleClient();
+}
+
 void handleUDPMessages() {
     String msg;
     if (!readIncomingUDP(msg)) return;
@@ -43,6 +61,9 @@ void handleUDPMessages() {
                   lastRemoteIp.toString().c_str(),
                   lastRemotePort,
                   msg.c_str());
+
+    // 原样回显，便于上位机网络监测
+    sendUDPMessageToLast(msg);
 
     if (msg == "Start") {
         startEventSequence();
@@ -60,6 +81,7 @@ void handleUDPMessages() {
 }
 
 void sendUDPMessage(const IPAddress& ip, uint16_t port, const String& msg) {
+    Serial.printf("[WiFi UDP] Send to %s:%u : %s\n", ip.toString().c_str(), port, msg.c_str());
     Udp.beginPacket(ip, port);
     Udp.write(msg.c_str());
     Udp.endPacket();

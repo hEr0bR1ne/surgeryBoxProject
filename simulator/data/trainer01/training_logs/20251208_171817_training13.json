@@ -1,0 +1,24 @@
+{
+  "username": "trainer01",
+  "completed_at": "2025-12-08T17:18:17.094597",
+  "training_data": {
+    "training_type": "comprehensive",
+    "training_mode": "comprehensive",
+    "elapsed_time": 129.1,
+    "accuracy": 89.0,
+    "events_triggered": {
+      "Q3": 45.5,
+      "Q4": 81.4,
+      "Q5": 119.5
+    },
+    "max_pull_distance": 19.6,
+    "pull_config": {
+      "scream_distance_1": 3.8,
+      "scream_distance_2": 8.6,
+      "high_damping_distance": 13.3,
+      "low_damping_distance": 17.8,
+      "damping_after_reposition": 1
+    },
+    "completed_at": "2025-12-08T17:18:17.094597"
+  }
+}

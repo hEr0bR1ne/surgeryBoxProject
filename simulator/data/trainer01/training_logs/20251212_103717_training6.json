@@ -1,0 +1,24 @@
+{
+  "username": "trainer01",
+  "completed_at": "2025-12-12T10:37:17.094597",
+  "training_data": {
+    "training_type": "change_dressing",
+    "training_mode": "change_dressing",
+    "elapsed_time": 149.8,
+    "accuracy": 87.0,
+    "events_triggered": {
+      "Q3": 30.6,
+      "Q4": 93.1,
+      "Q5": 126.5
+    },
+    "max_pull_distance": 20.0,
+    "pull_config": {
+      "scream_distance_1": 3.1,
+      "scream_distance_2": 7.2,
+      "high_damping_distance": 14.2,
+      "low_damping_distance": 16.8,
+      "damping_after_reposition": 0
+    },
+    "completed_at": "2025-12-12T10:37:17.094597"
+  }
+}

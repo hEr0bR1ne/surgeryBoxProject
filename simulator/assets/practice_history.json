@@ -1,0 +1,148 @@
+{
+  "records": [
+    {
+      "date": "2024-12-01",
+      "accuracy": 60,
+      "correct": 3,
+      "total": 5
+    },
+    {
+      "date": "2024-12-02",
+      "accuracy": 80,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-03",
+      "accuracy": 100,
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2024-12-04",
+      "accuracy": 40,
+      "correct": 2,
+      "total": 5
+    },
+    {
+      "date": "2024-12-05",
+      "accuracy": 100,
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2024-12-06",
+      "accuracy": 80,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-07",
+      "accuracy": 60,
+      "correct": 3,
+      "total": 5
+    },
+    {
+      "date": "2024-12-08",
+      "accuracy": 90,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-09",
+      "accuracy": 100,
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2024-12-10",
+      "accuracy": 70,
+      "correct": 3,
+      "total": 5
+    },
+    {
+      "date": "2024-12-11",
+      "accuracy": 80,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-12",
+      "accuracy": 60,
+      "correct": 3,
+      "total": 5
+    },
+    {
+      "date": "2024-12-13",
+      "accuracy": 100,
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2024-12-14",
+      "accuracy": 70,
+      "correct": 3,
+      "total": 5
+    },
+    {
+      "date": "2024-12-15",
+      "accuracy": 90,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-16",
+      "accuracy": 80,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-17",
+      "accuracy": 50,
+      "correct": 2,
+      "total": 5
+    },
+    {
+      "date": "2024-12-18",
+      "accuracy": 100,
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2024-12-19",
+      "accuracy": 80,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2024-12-20",
+      "accuracy": 90,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "date": "2025-12-22",
+      "accuracy": 0,
+      "correct": 0,
+      "total": 5
+    },
+    {
+      "date": "2025-12-23",
+      "accuracy": 100,
+      "correct": 1,
+      "total": 1
+    },
+    {
+      "date": "2025-12-23",
+      "accuracy": 100,
+      "correct": 5,
+      "total": 5
+    },
+    {
+      "date": "2025-12-23",
+      "accuracy": 100,
+      "correct": 1,
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "Q1": {
+    "question": "An epidural catheter should be removed if: (You can select more than one answer)",
+    "options": {
+      "A": "INR is 1.2 today",
+      "B": "Platelet count is 50 today",
+      "C": "Anesthetist ordered \"removal of epidural catheter\"",
+      "D": "Platelet count is 165 today",
+      "E": "Patient is not using anticoagulant / antiplatelet",
+      "F": "Anaesthetist ordered \"off epidural analgesia\"",
+      "G": "Patient is using anticoagulant",
+      "H": "INR is 1.6 today"
+    },
+    "correct_answers": ["A", "C", "D", "E", "F"]
+  },
+  "Q2": {
+    "question": "Which of the following is the best patient position for removal of epidural catheter?",
+    "options": {
+      "A": "Lateral position with bilateral knee bend to chest",
+      "B": "Prone position",
+      "C": "Lateral position"
+    },
+    "correct_answers": ["A"]
+  },
+  "Q3": {
+    "question": "What should you do if patient complains of back pain with shooting leg pain while you are pulling out the epidural catheter?",
+    "options": {
+      "A": "Continue the procedure",
+      "B": "Stop the procedure",
+      "C": "Told patient that it is normal"
+    },
+    "correct_answers": ["B"]
+  },
+  "Q4": {
+    "question": "What should you do if there is high resistance while pulling out epidural catheter?",
+    "options": {
+      "A": "Pull out the epidural catheter with a stronger force",
+      "B": "Use forceps to assist pulling out the epidural catheter",
+      "C": "Stop the procedure"
+    },
+    "correct_answers": ["C"]
+  },
+  "Q5": {
+    "question": "What should you do if there is slight resistance while pulling out epidural catheter?",
+    "statements": {
+      "i": "Continue the procedure after reposition the patient",
+      "ii": "Stop the procedure immediately and inform pain team / anesthetist",
+      "iii": "Use forceps to assist pulling out the catheter",
+      "iv": "Stop the procedure if resistance is still encountered after repositioning the patient"
+    },
+    "options": {
+      "A": ["i", "iv"],
+      "B": ["ii", "iv"],
+      "C": ["i", "iii"]
+    },
+    "correct_answers": ["A"]
+  }
+}
